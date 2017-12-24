@@ -9,11 +9,11 @@ class GitBrowse < Formula
   depends_on :python3
 
   def install
-    bin.install "install.sh", "git_browse/browse.py"
+    prefix.install "install.sh", "git_browse/browse.py"
   end
 
   def post_install
-    system "#{bin}/install.sh", bin
+    system "#{prefix}/install.sh", prefix
   end
 
   test do
