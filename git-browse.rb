@@ -14,6 +14,7 @@ class GitBrowse < Formula
 
   def post_install
     system "#{prefix}/install.sh", prefix
+    system "rm", "#{prefix}/install.sh"
   end
 
   test do
