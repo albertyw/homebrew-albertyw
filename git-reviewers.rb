@@ -6,7 +6,7 @@ class GitReviewers < Formula
 
   head "https://github.com/albertyw/git-reviewers.git", :using => :git
 
-  depends_on "python3"
+  depends_on "python"
 
   def install
     prefix.install "install.sh", "git_reviewers/reviewers.py"

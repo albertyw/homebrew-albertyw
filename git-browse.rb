@@ -6,7 +6,7 @@ class GitBrowse < Formula
 
   head "https://github.com/albertyw/git-browse.git", :using => :git
 
-  depends_on "python3"
+  depends_on "python"
 
   def install
     prefix.install "install.sh", "git_browse/browse.py"
