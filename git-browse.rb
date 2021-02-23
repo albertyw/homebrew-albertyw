@@ -1,8 +1,8 @@
 class GitBrowse < Formula
   desc "Open git files, directories, commits, and branches in the browser"
   homepage "https://github.com/albertyw/git-browse"
-  url "https://github.com/albertyw/git-browse/archive/v2.9.1.tar.gz"
-  sha256 "f1032513522bf868c21d8cb6d2339fb0643165a7ce471a425ad31841cd1f1b56"
+  url "https://github.com/albertyw/git-browse/archive/v2.9.2.tar.gz"
+  sha256 "124e573a6105ad2c3067bee9afa3430c39e01dc55023e9ffb632d687f1b0564a"
 
   head "https://github.com/albertyw/git-browse.git", :using => :git
 
