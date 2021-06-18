@@ -1,0 +1,12 @@
+kind: pipeline
+type: docker
+name: test
+
+steps:
+  - name: Test Homebrew
+    image: homebrew/brew:3.1.12
+    commands:
+      - brew audit ./git-browse.rb --formula
+      - brew audit ./git-reviewers.rb --formula
+      - brew install ./git-browse.rb --formula --build-from-source
+      - brew install ./git-reviewers.rb --formula --build-from-source

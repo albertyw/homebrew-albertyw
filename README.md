@@ -1,5 +1,7 @@
 # homebrew-albertyw
 
+[![Build Status](https://drone.albertyw.com/api/badges/albertyw/homebrew-albertyw/status.svg)](https://drone.albertyw.com/albertyw/homebrew-albertyw)
+
 Tap for some of my packages
 
 This currently contains a homebrew formula for

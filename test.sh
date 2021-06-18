@@ -1,7 +1,7 @@
 #!/bin/bash
 
-brew audit git-browse.rb
-brew audit git-reviewers.rb
+brew audit ./git-browse.rb --formula
+brew audit ./git-reviewers.rb --formula
 
-brew test git-browse
-brew test git-reviewers
+brew install ./git-browse.rb --formula --build-from-source
+brew install ./git-reviewers.rb --formula --build-from-source
