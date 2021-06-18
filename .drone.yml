@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: test
+
+steps:
+  - name: Test Homebrew
+    image: homebrew/brew:3.1.12
+    commands:
+      - ./test.sh
