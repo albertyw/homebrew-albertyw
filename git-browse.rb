@@ -19,8 +19,4 @@ class GitBrowse < Formula
   def post_install
     system "#{prefix}/install.sh", prefix
   end
-
-  test do
-    system "git", "config", "--file", "/Users/#{ENV["USER"]}/.gitconfig", "alias.browse"
-  end
 end

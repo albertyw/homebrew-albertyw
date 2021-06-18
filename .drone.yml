@@ -10,5 +10,3 @@ steps:
       - brew audit ./git-reviewers.rb --formula
       - brew install ./git-browse.rb --formula --build-from-source
       - brew install ./git-reviewers.rb --formula --build-from-source
-      - brew test ./git-browse.rb
-      - brew test ./git-reviewers.rb
