@@ -30,5 +30,5 @@ brew install albertyw/albertyw/git-reviewers
 
 To update formula, when a new release is made
 1.  Edit the formula's `url` field to point to the new release version
-2.  Run `brew fetch ./git-browse.rb --build-from-source` (or `./git-reviewers.rb`)
+2.  Run `brew fetch ./git-browse.rb --build-from-source --formula` (or `./git-reviewers.rb`)
 3.  Get the computed SHA256 and copy it into the formula's `sha256` field
