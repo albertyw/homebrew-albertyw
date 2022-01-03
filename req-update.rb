@@ -7,6 +7,7 @@ class ReqUpdate < Formula
   homepage "https://github.com/albertyw/req-update"
   url "https://github.com/albertyw/req-update/archive/v1.6.4.tar.gz"
   sha256 "7b6a50e596b8a91e172d32c76c78ecb0591dd459c16c74c973a8b2d2b678e2c1"
+  license "MIT"
 
   head "https://github.com/albertyw/req-update.git", using: :git
 
