@@ -26,6 +26,16 @@ Intelligently find code reviewers.
 brew install albertyw/albertyw/git-reviewers
 ```
 
+
+## req-update
+
+Automatically update your project's dependencies
+
+```bash
+brew install albertyw/albertyw/req-update
+```
+
+
 ## Releases
 
 To update formula, when a new release is made:
