@@ -4,7 +4,7 @@ name: test
 
 steps:
   - name: Test Homebrew
-    image: homebrew/brew:3.6.12
+    image: homebrew/brew:3.6.13
     commands:
       - brew audit ./git-browse.rb --formula
       - brew audit ./git-reviewers.rb --formula
