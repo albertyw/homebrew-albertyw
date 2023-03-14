@@ -6,6 +6,7 @@ steps:
   - name: Test Homebrew
     image: homebrew/brew:latest
     commands:
+      - brew developer on
       - brew audit ./git-browse.rb --formula
       - brew audit ./git-reviewers.rb --formula
       - brew install ./git-browse.rb --formula --build-from-source
