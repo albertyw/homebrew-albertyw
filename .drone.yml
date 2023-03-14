@@ -10,3 +10,5 @@ steps:
       - brew audit ./git-reviewers.rb --formula
       - brew install ./git-browse.rb --formula --build-from-source
       - brew install ./git-reviewers.rb --formula --build-from-source
+node:  # Homebrew only has amd64 images so must run on amd64 platforms
+  host: albertyw-server
