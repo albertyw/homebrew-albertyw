@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 # frozen_string_literal: true
 
 # GitBrowse is a homebrew formula for the git-browse cli tool
