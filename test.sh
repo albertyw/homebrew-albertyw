@@ -1,5 +1,11 @@
 #!/bin/bash
 
+set -euxo pipefail
+IFS=$'\n\t'
+
+brew developer on
+brew typecheck
+
 brew audit ./git-browse.rb --formula
 brew audit ./git-reviewers.rb --formula
 
