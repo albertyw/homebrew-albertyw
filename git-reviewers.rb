@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 # frozen_string_literal: true
 
 # GitReviewers is a homebrew formula for the git-reviewers cli tool

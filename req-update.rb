@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 # frozen_string_literal: true
 
 # ReqUpdate is a homebrew formula for the req-update cli tool
