@@ -5,8 +5,8 @@
 class GitReviewers < Formula
   desc "Open git files, directories, commits, and branches in the reviewersr"
   homepage "https://github.com/albertyw/git-reviewers"
-  url "https://github.com/albertyw/git-reviewers/archive/v0.13.4.tar.gz"
-  sha256 "e65cf9b7cfae58989db7cf4b47cedde25d97e958f8cbcd47b7a92140b35bd16c"
+  url "https://github.com/albertyw/git-reviewers/archive/v0.13.5.tar.gz"
+  sha256 "b3241a9d9a3f7f14c57b4c64bbbf7bc644724e3674d20035aab6f46765fa4cc0"
   license "MIT"
 
   head "https://github.com/albertyw/git-reviewers.git", using: :git
