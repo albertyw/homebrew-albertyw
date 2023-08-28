@@ -4,9 +4,10 @@
 
 Tap for some of my packages
 
-This currently contains a homebrew formula for
-[git-browse](https://github.com/albertyw/git-browse) and
-[git-reviewers](https://github.com/albertyw/git-reviewers).
+This currently contains a homebrew formula for:
+- [git-browse](https://github.com/albertyw/git-browse)
+- [git-reviewers](https://github.com/albertyw/git-reviewers)
+- [req-update](https://github.com/albertyw/req-update)
 
 
 ## git-browse
