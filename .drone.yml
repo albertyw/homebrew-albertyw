@@ -7,5 +7,3 @@ steps:
     image: homebrew/brew:latest
     commands:
       - ./test.sh
-node:  # Homebrew only has amd64 images so must run on amd64 platforms
-  host: albertyw-server
