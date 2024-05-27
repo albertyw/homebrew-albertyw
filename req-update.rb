@@ -5,8 +5,8 @@
 class ReqUpdate < Formula
   desc "Automatically update your project's dependencies"
   homepage "https://github.com/albertyw/req-update"
-  url "https://github.com/albertyw/req-update/archive/v2.5.1.tar.gz"
-  sha256 "5a10953626cfebf1b89cc89db2ba8c8c2314f3a38aa6127b4ba754633c00d6b7"
+  url "https://github.com/albertyw/req-update/archive/v2.6.0.tar.gz"
+  sha256 "dcc90b6626df356c5a693e9ce2aaa6bb19270e9e08abcbc948b0bac471a09ec7"
   license "MIT"
 
   head "https://github.com/albertyw/req-update.git", using: :git
