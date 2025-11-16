@@ -3,7 +3,9 @@
 set -euxo pipefail
 IFS=$'\n\t'
 
+export HOMEBREW_DEVELOPER=1
 brew developer on
+
 brew typecheck
 
 # brew audit ./git-browse.rb --formula
