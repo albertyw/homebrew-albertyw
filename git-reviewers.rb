@@ -5,18 +5,18 @@
 class GitReviewers < Formula
   desc "Find code reviewers for a git commit"
   homepage "https://github.com/albertyw/git-reviewers"
-  url "https://github.com/albertyw/git-reviewers/archive/v0.13.7.tar.gz"
+  url "https://github.com/albertyw/git-reviewers/archive/refs/tags/v0.13.7.tar.gz"
   sha256 "509a91903b908b773b553b72ac513f7e37b8b2bcdac2a4a02626f9cd26bc5c81"
   license "MIT"
 
   head "https://github.com/albertyw/git-reviewers.git", using: :git
 
-  depends_on "python"
-
   livecheck do
     url :stable
     strategy :github_latest
   end
+
+  depends_on "python"
 
   def install
     libexec.install "git_reviewers/reviewers.py"

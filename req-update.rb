@@ -5,18 +5,18 @@
 class ReqUpdate < Formula
   desc "Automatically update your project's dependencies"
   homepage "https://github.com/albertyw/req-update"
-  url "https://github.com/albertyw/req-update/archive/v2.9.1.tar.gz"
+  url "https://github.com/albertyw/req-update/archive/refs/tags/v2.9.1.tar.gz"
   sha256 "b336d81cace6694979c3c0a286a0173ea066cc2ce4d1ee9ef1084154fd62be97"
   license "MIT"
 
   head "https://github.com/albertyw/req-update.git", using: :git
 
-  depends_on "python"
-
   livecheck do
     url :stable
     strategy :github_latest
   end
+
+  depends_on "python"
 
   def install
     libexec.install Dir["*"]
