@@ -8,7 +8,7 @@ brew developer on
 
 brew typecheck
 
-git config --global --add safe.directory "$(pwd)"
+git config --global --add safe.directory '*'
 brew tap albertyw/albertyw .
 
 for formula in git-browse git-reviewers req-update; do
