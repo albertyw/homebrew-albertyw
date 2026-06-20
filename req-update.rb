@@ -17,4 +17,8 @@ class ReqUpdate < Formula
     libexec.install Dir["*"]
     bin.write_exec_script libexec/"req_update/req_update.py"
   end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/req_update.py --version")
+  end
 end

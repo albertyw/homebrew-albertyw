@@ -20,4 +20,8 @@ class GitBrowse < Formula
   def post_install
     system "#{prefix}/install.sh", prefix
   end
+
+  test do
+    assert_match version.to_s, shell_output("#{prefix}/browse.py --version")
+  end
 end
