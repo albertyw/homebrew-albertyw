@@ -19,10 +19,10 @@ class GitBrowse < Formula
   depends_on "python"
 
   def install
-    libexec.install "git_browse/browse.py"
+    libexec.install "git_browse"
     (bin/"git-browse").write <<~EOS
       #!/bin/bash
-      exec "#{libexec}/browse.py" --path="${GIT_PREFIX:-./}" "$@"
+      exec "#{libexec}/git_browse/browse.py" --path="${GIT_PREFIX:-./}" "$@"
     EOS
   end
 
