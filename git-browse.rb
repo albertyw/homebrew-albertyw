@@ -13,6 +13,11 @@ class GitBrowse < Formula
 
   depends_on "python"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   def install
     libexec.install "git_browse/browse.py"
     (bin/"git-browse").write <<~EOS

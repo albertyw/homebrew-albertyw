@@ -13,6 +13,11 @@ class GitReviewers < Formula
 
   depends_on "python"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   def install
     libexec.install "git_reviewers/reviewers.py"
     (bin/"git-reviewers").write <<~EOS

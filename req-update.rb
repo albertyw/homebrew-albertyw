@@ -13,6 +13,11 @@ class ReqUpdate < Formula
 
   depends_on "python"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   def install
     libexec.install Dir["*"]
     bin.write_exec_script libexec/"req_update/req_update.py"
