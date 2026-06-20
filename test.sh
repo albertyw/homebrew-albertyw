@@ -8,9 +8,11 @@ brew developer on
 
 brew typecheck
 
+brew tap albertyw/albertyw .
+
 for formula in git-browse git-reviewers req-update; do
-  brew audit ./$formula.rb --formula --strict
-  brew install ./$formula.rb --formula --build-from-source
-  brew test ./$formula.rb --formula
-  brew uninstall ./$formula.rb --formula
+  brew audit albertyw/albertyw/$formula --strict
+  brew install albertyw/albertyw/$formula --build-from-source
+  brew test albertyw/albertyw/$formula
+  brew uninstall albertyw/albertyw/$formula
 done
