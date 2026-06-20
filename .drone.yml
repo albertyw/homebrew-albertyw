@@ -7,3 +7,27 @@ steps:
     image: ghcr.io/homebrew/brew:6.0.2
     commands:
       - ./test.sh
+
+  - name: Integration test git-browse
+    image: ghcr.io/homebrew/brew:6.0.2
+    commands:
+      - git config --global --add safe.directory '*'
+      - brew tap albertyw/albertyw .
+      - brew install albertyw/albertyw/git-browse --build-from-source
+      - git-browse -d
+
+  - name: Integration test git-reviewers
+    image: ghcr.io/homebrew/brew:6.0.2
+    commands:
+      - git config --global --add safe.directory '*'
+      - brew tap albertyw/albertyw .
+      - brew install albertyw/albertyw/git-reviewers --build-from-source
+      - git-reviewers
+
+  - name: Integration test req-update
+    image: ghcr.io/homebrew/brew:6.0.2
+    commands:
+      - git config --global --add safe.directory '*'
+      - brew tap albertyw/albertyw .
+      - brew install albertyw/albertyw/req-update --build-from-source
+      - req_update.py --dryrun
