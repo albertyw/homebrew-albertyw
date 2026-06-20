@@ -4,6 +4,6 @@ name: test
 
 steps:
   - name: Test Homebrew
-    image: homebrew/brew:4.6.20
+    image: ghcr.io/homebrew/brew:6.0.2
     commands:
       - ./test.sh
