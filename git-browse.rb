@@ -14,14 +14,14 @@ class GitBrowse < Formula
   depends_on "python"
 
   def install
-    prefix.install "install.sh", "git_browse/browse.py"
-  end
-
-  def post_install
-    system "#{prefix}/install.sh", prefix
+    libexec.install "git_browse/browse.py"
+    (bin/"git-browse").write <<~EOS
+      #!/bin/bash
+      exec "#{libexec}/browse.py" --path="${GIT_PREFIX:-./}" "$@"
+    EOS
   end
 
   test do
-    assert_match version.to_s, shell_output("#{prefix}/browse.py --version")
+    assert_match version.to_s, shell_output("#{bin}/git-browse --version")
   end
 end

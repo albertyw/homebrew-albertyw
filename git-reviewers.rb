@@ -14,14 +14,14 @@ class GitReviewers < Formula
   depends_on "python"
 
   def install
-    prefix.install "install.sh", "git_reviewers/reviewers.py"
-  end
-
-  def post_install
-    system "#{prefix}/install.sh", prefix
+    libexec.install "git_reviewers/reviewers.py"
+    (bin/"git-reviewers").write <<~EOS
+      #!/bin/bash
+      exec "#{libexec}/reviewers.py" "$@"
+    EOS
   end
 
   test do
-    assert_match version.to_s, shell_output("#{prefix}/reviewers.py --version")
+    assert_match version.to_s, shell_output("#{bin}/git-reviewers --version")
   end
 end
