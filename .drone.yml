@@ -12,7 +12,8 @@ steps:
     image: ghcr.io/homebrew/brew:7.0.1
     commands:
       - git config --global --add safe.directory '*'
-      - brew tap albertyw/albertyw .
+      - brew trust "$(pwd)"
+      - brew tap albertyw/albertyw "$(pwd)"
       - brew install albertyw/albertyw/git-browse --build-from-source
       - git-browse -d
 
@@ -20,7 +21,8 @@ steps:
     image: ghcr.io/homebrew/brew:7.0.1
     commands:
       - git config --global --add safe.directory '*'
-      - brew tap albertyw/albertyw .
+      - brew trust "$(pwd)"
+      - brew tap albertyw/albertyw "$(pwd)"
       - brew install albertyw/albertyw/git-reviewers --build-from-source
       - git-reviewers
 
@@ -28,6 +30,7 @@ steps:
     image: ghcr.io/homebrew/brew:7.0.1
     commands:
       - git config --global --add safe.directory '*'
-      - brew tap albertyw/albertyw .
+      - brew trust "$(pwd)"
+      - brew tap albertyw/albertyw "$(pwd)"
       - brew install albertyw/albertyw/req-update --build-from-source
       - req_update.py --dryrun
