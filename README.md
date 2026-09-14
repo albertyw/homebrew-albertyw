@@ -10,6 +10,20 @@ This currently contains a homebrew formula for:
 - [req-update](https://github.com/albertyw/req-update)
 
 
+## Installation
+
+Homebrew requires non-official taps to be trusted before it will load their
+formulae.  Installing a formula by its fully qualified name (as shown below)
+trusts only that formula.  To trust the whole tap so formulae can be installed
+by their short names:
+
+```bash
+brew trust albertyw/albertyw
+brew tap albertyw/albertyw
+brew install git-browse
+```
+
+
 ## git-browse
 
 Open repositories, directories, and files in the browser.
@@ -34,6 +48,18 @@ Automatically update your project's dependencies
 
 ```bash
 brew install albertyw/albertyw/req-update
+```
+
+
+## Development
+
+A tap from a local checkout is trusted by its path rather than its name, so
+trust the path before tapping it:
+
+```bash
+brew trust "$(pwd)"
+brew tap albertyw/albertyw "$(pwd)"
+brew install albertyw/albertyw/git-browse --build-from-source
 ```
 
 
