@@ -10,6 +10,7 @@ brew typecheck
 
 git config --global --add safe.directory '*'
 brew tap albertyw/albertyw .
+brew trust albertyw/albertyw
 
 for formula in git-browse git-reviewers req-update; do
   brew audit albertyw/albertyw/$formula --strict
